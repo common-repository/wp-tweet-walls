@@ -1,0 +1,61 @@
+.wptw-tweet-wall {
+  max-width: 1335px !important;
+  margin: 0 auto !important;
+  width: 100%;
+}
+.wptw-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.wptw-grid__column {
+  flex-basis: 30%;
+  -ms-flex: auto;
+  width: calc(100% / 3);
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@media(max-width: 1333px) {
+  .wptw-grid__column {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 1073px) {
+   .wptw-grid__column {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 815px) {
+  .wptw-grid__column {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .wptw-grid__column {
+    flex-basis: 100%;
+  }
+}
+
+.twitter-tweet {
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.05);
+  margin-bottom: 15px !important;
+  transition: box-shadow 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+.twitter-tweet:hover {
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.07);
+}
+
+.wptw-wall__title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.wptw-wall__description {
+  margin-bottom: 7px;
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
